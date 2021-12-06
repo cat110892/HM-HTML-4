@@ -28,7 +28,7 @@ img {
 }
 
 .container {
-    width: 1200px;
+    width: 1600px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -153,6 +153,7 @@ body {
 
 
 .header-tel {
+    display: inline-flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -161,18 +162,39 @@ body {
 }
 
 .header-mail {
+    display: inline-flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color)
+    
+}
+.heder-tel-icon {
+    margin-right: 10px;
+    fill: #757575;
+}
+.heder-mail-icon {
+    margin-right: 10px;
+    fill: #757575;
 }
 
+.heder-tel-icon:hover,
+.heder-tel-icon:focus {
+    fill: var(--accent-color);
+}
+
+
+.heder-mail-icon:focus ,
+.heder-mail-icon:hover  {
+    fill: var(--accent-color);
+}
 
 /*------------hero-----------------------------------------------*/
 .hero-bg {
 width: 1600px;
-height: 600px;
+margin-left: auto;
+margin-right: auto;
 background-color: var(--main-text-color);
 background-image: 
       linear-gradient(rgba(55, 47, 58, 0.4),
