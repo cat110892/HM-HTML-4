@@ -172,23 +172,16 @@ body {
 }
 .heder-tel-icon {
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 .heder-mail-icon {
     margin-right: 10px;
-    fill: #757575;
-}
-
-.heder-tel-icon:hover,
-.heder-tel-icon:focus {
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 
 
-.heder-mail-icon:focus ,
-.heder-mail-icon:hover  {
-    fill: var(--accent-color);
-}
+
+
 
 /*------------hero-----------------------------------------------*/
 .hero-bg {
@@ -505,13 +498,13 @@ color: #212121;
 }
 
 .permanent-clients-icon {
-    fill: #AFB1B8;
+    fill: currentColor
 }
 
 .clients-icon:focus,
 .clients-icon:hover {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 /*-----------contacts---------------------*/
 
@@ -712,42 +705,44 @@ margin-bottom: 20px;
 
 
     .about-portfolio { 
-    outline: 1px solid #EEEEEE;
     box-sizing: border-box;    
 
     flex-basis: calc((100% - 3 * 30px) / 3);
     margin-bottom: 30px;
     margin-right: 30px;
     
+    
 }
 
 .about-second-portfolio-title {
-    margin-top: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
     font-size: 18px;
     line-height: 36px;
 }
 
 .about-second-portfolio-text {
-    font-style: 400;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.8;
     letter-spacing: 0.03em;
     margin-top: 4px;
-    margin-bottom: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
     color: var(--main-text-color)
 }
 
-.about-portfolio:focus,
-.about-portfolio:hover {
-    background: #FFFFFF;
-border: 1px solid #EEEEEE;
-box-sizing: border-box;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+.ab-portfolio {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    border: 1px solid #EEEEEE;
+}
+
+
+.ab-portfolio:focus , 
+.ab-portfolio:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*--------------header------------------*/
