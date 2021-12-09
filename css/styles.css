@@ -146,6 +146,7 @@ body {
 
 .header-tel {
     display: inline-flex;
+    margin-left: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
